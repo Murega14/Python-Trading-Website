@@ -1,4 +1,4 @@
-# OctoBot [2.0.3](https://github.com/Drakkar-Software/OctoBot/blob/master/CHANGELOG.md)
+# OctoBot [2.0.4](https://github.com/Drakkar-Software/OctoBot/blob/master/CHANGELOG.md)
 [![PyPI](https://img.shields.io/pypi/v/OctoBot.svg?logo=pypi)](https://pypi.org/project/OctoBot)
 [![Downloads](https://pepy.tech/badge/octobot/month)](https://pepy.tech/project/octobot)
 [![Dockerhub](https://img.shields.io/docker/pulls/drakkarsoftware/octobot.svg?logo=docker)](https://hub.docker.com/r/drakkarsoftware/octobot)
@@ -48,14 +48,15 @@ OctoBot can be easily launched on the cloud from the [DigitalOcean Marketplace](
 
 ### Manual installations
 To install OctoBot, you can either:
-- [Deploy your OctoBot on the cloud using DigitalOcean](https://octobot.cloud/en/guides/octobot-installation/cloud-install-octobot-on-digitalocean?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=readme_deploy_on_cloud) and have your OctoBot automating your strategies 24/7.
-- [Download and install](https://www.octobot.cloud/en/guides/octobot-installation/install-octobot-on-your-computer?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=readme_local_installation) OctoBot on your computer or server.
-- Install OctoBot [using docker](https://www.octobot.cloud/en/guides/octobot-installation/install-octobot-with-docker-video?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=readme_docker_installation).
-    Docker install in one line summary:
+- Install OctoBot in your computer.
+    
     ```
-    docker run -itd --name OctoBot -p 80:5001 -v $(pwd)/user:/octobot/user -v $(pwd)/tentacles:/octobot/tentacles -v $(pwd)/logs:/octobot/logs drakkarsoftware/octobot:stable
+    pip install requirements
+    python start.py
     ```
     Your OctoBot will be accessible on [http://localhost](http://localhost).
+- [Deploy your OctoBot on the cloud using DigitalOcean](https://octobot.cloud/en/guides/octobot-installation/cloud-install-octobot-on-digitalocean?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=readme_deploy_on_cloud) and have your OctoBot automating your strategies 24/7.
+
 
 ## Exchanges
 [![All OctoBot supported exchanges](../assets/exchange_logo.png)](https://www.octobot.cloud/en/guides/exchanges?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=binance)
